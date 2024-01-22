@@ -1,0 +1,40 @@
+@import url(styles.css);
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.gallery-item{
+    flex: 0 0 calc(33.33% - 24px);
+    margin-bottom: 24px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 200ms ease-in-out;
+}
+
+.gallery-image:hover {
+    transform: scale(1.077);
+}
