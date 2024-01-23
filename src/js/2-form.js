@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
 
-    console.log('Submitted Data:', { email, message });
+    console.log({ email, message });
 
     feedbackForm.reset();
     localStorage.removeItem(localStorageKey);
